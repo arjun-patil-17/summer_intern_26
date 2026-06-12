@@ -1,0 +1,15 @@
+TO run this change the image in image processor.py to whatever image you want to check for 
+run this command 
+for the first time use
+verilator --binary -j 4 -Wno-fatal riscv_soc.v
+
+then followed by 
+./run_sim.sh
+
+to know about the catergory the category with the highest value is the predicted category
+the meaning of the catergory are
+0 for plane
+5 for dog
+9 for truck
+
+the rest are categories for which model was not trained for
